@@ -52,9 +52,11 @@
 }
 
 
-body {
+body { 
   margin: 0;
-  font-family: 'Nanum Pen Script', cursive;
+  padding: 0;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -63,6 +65,11 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 hr {
@@ -123,6 +130,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
+  color: #000;
 }
 
 h6, .h6 {
@@ -607,6 +615,7 @@ progress {
 .container-md,
 .container-sm {
   width: 100%;
+  height: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -10879,7 +10888,7 @@ p {
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 2rem;
   font-weight: 400;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Noto Sans KR", sans-serif;
   margin-bottom: 4rem;
 }
 
@@ -10913,13 +10922,13 @@ p {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
 #mainNav .navbar-brand {
   color: #4aa3fc;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   letter-spacing: 0.0625em;
   text-transform: uppercase;
@@ -10930,7 +10939,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 0.95rem;
-  color: #fff;
+  color: #000;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -10956,7 +10965,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10973,29 +10982,37 @@ p {
   }
 }
 header.masthead {
+  width: 100%;
+  height: 100%;
+  padding: 15rem 0;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
-  text-align: center;
+  text-align: left;
   color: #fff;
   background-image: url("../assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: 100% auto;
+  line-height: 150%;
 }
 header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #062058;
+  text-align: left;
 }
 header.masthead .masthead-heading {
-  font-size: 3.25rem;
+  font-size: 2.0rem;
   font-weight: 700;
-  line-height: 3.25rem;
+  line-height: 200%;
   margin-bottom: 2rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
@@ -11005,15 +11022,16 @@ header.masthead .masthead-heading {
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
-    font-style: italic;
+    font-style: bold;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    line-height: 4.5rem;
+    line-height: 2.5rem;
     margin-bottom: 4rem;
+    text-align: left;
   }
 }
 #portfolio .portfolio-item {
@@ -11098,7 +11116,16 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
-
+.aboutus:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  height: 6px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
 .timeline {
   position: relative;
   padding: 0;
@@ -11109,12 +11136,12 @@ header.masthead .masthead-heading {
   top: 0;
   bottom: 0;
   left: 40px;
-  width: 2px;
+  width: 6px;
   margin-left: -1.5px;
   content: "";
   background-color: #e9ecef;
 }
-.timeline > li {
+.timeline > l{
   position: relative;
   min-height: 50px;
   margin-bottom: 50px;
@@ -11342,4 +11369,101 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+.about_us{
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.about_us_intro {
+  width: 90%;
+  margin: 40px auto;
+  padding: 1.5rem;
+  display: flex;
+}
+
+.about_us_history {
+  width: 90%;
+  margin: 40px auto;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  display: flex;
+}
+
+.about_us_title {
+  width: 30%;
+  padding-left: 2rem;
+  font-weight: 1000;
+  text-align: left;
+  color: #003c79;
+}
+
+.about_us_contents{
+  width: 60%;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+
+.about_us_history {
+  background-color:#fff;
+  min-height:100vh;
+  margin:0;
+}
+
+
+.timeline-item {
+	padding: 3em 2em 2em;
+	position: relative;
+	color: rgba(black, 1.);
+	border-left: 2px solid #000;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1370ce;
+}
+
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid #555;
+  background: white;
+}
+
+.timeline-item:last-child {
+  border-image: linear-gradient(
+    to bottom,
+    #000 100%,
+    rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.team-member-row{
+  width: 90%;
+  align-items: center;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
 }
