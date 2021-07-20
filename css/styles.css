@@ -7345,6 +7345,7 @@ textarea.form-control-lg {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  line-height: 150% !important;
 }
 
 .text-capitalize {
