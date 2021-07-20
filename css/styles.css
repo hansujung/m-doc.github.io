@@ -11396,6 +11396,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: flex;
 }
 
+.about_us_team {
+  width: 90%;
+  padding-left: 2rem;
+  font-weight: 1000;
+  text-align: left;
+  color: #003c79;
+}
+
 .about_us_title {
   width: 30%;
   padding-left: 2rem;
