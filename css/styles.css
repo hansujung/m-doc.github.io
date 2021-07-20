@@ -11385,15 +11385,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 100%;
   margin: 1rem auto;
   padding: 1rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
-}
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  }
 
 .about_us_history {
-  width: 90%;
-  margin: 40px auto;
-  margin-top: 5rem;
-  padding-top: 2rem;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
 }
 
 .about_us_team {
@@ -11405,7 +11412,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .about_us_title {
-  width: 30%;
   padding-left: 2rem;
   font-weight: 1000;
   text-align: left;
@@ -11413,7 +11419,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .about_us_contents{
-  width: 60%;
   text-align: left;
   font-size: 1.3rem;
 }
